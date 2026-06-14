@@ -52,6 +52,11 @@ input[type=range].vs{writing-mode:vertical-lr;direction:rtl;width:4px;height:72p
 /* ── 페이지 ── */
 .page{width:100%;max-width:100%;margin:0 auto;padding:0 0 5rem;}
 
+/* ── PC 비율 조정 ── */
+@media(min-width:768px){
+  .page{max-width:560px;}
+}
+
 /* ── 히어로 ── */
 .hero{padding:4rem 1.4rem 3rem;text-align:center;border-bottom:1px solid rgba(201,168,76,0.15);position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,0.15) 0%,transparent 65%);pointer-events:none;}
